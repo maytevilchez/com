@@ -1,0 +1,102 @@
+/* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h3 {
+    color: #005b99; /* Azul uniforme para todos los títulos */
+    font-size: 24px; /* Ajuste del tamaño */
+    margin-bottom: 15px; /* Espaciado uniforme debajo del título */
+    text-align: center; /* Asegura que estén centrados */
+}
+
+/* Contenedor principal de los formularios */
+.contenedor-formularios {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* Estilo común para los formularios */
+.formulario-agregar,
+.formulario-eliminar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.formulario-agregar img,
+.formulario-eliminar img {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Dividir el formulario "Agregar Producto" en dos columnas */
+.form-columnas {
+    display: flex;
+    gap: 20px;
+}
+
+.columna {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, button, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;  /* Establecemos un tamaño de texto adecuado */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo específico para el select (menú desplegable) */
+select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #005b99; /* Cambia el borde a azul al hacer focus */
+    outline: none;
+}
+
+/* Añadir padding al primer elemento del select */
+select option {
+    padding: 10px;
+}
+
+/* Estilo para el "Seleccionar proveedor" */
+option:first-child {
+    color: #888; /* Gris claro */
+}

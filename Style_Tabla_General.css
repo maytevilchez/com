@@ -1,0 +1,58 @@
+/* Contenedor principal para centrar el contenido */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-color: #F4F6F9; /* Fondo claro general */
+}
+
+/* Contenedor de la tabla */
+table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse; /* Quitar espacios entre celdas */
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Recorte de bordes redondeados */
+    margin: 0 auto;
+}
+
+/* Estilo para las cabeceras de la tabla */
+table th {
+    background-color: #3972b3; /* Azul suave inspirado en el logo */
+    color: #FFFFFF; /* Texto blanco */
+    font-weight: bold;
+    padding: 12px 8px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 2px solid #0D47A1; /* Línea inferior en azul más oscuro */
+}
+
+/* Estilo para las celdas de la tabla */
+table td {
+    padding: 10px 8px;
+    font-size: 14px;
+    color: #4A4A4A; /* Texto gris oscuro */
+    border-bottom: 1px solid #E0E0E0; /* Línea divisoria clara */
+}
+
+/* Estilo alternativo para filas impares */
+table tr:nth-child(odd) td {
+    background-color: #F9FAFB; /* Fondo muy claro para alternancia */
+}
+
+/* Efecto al pasar el ratón por las filas */
+table tr:hover td {
+    background-color: #E3F2FD; /* Azul claro agradable al pasar el ratón */
+}
+
+/* Estilo para el mensaje de inventario vacío */
+p {
+    text-align: center;
+    color: #4A4A4A; /* Texto gris oscuro */
+    font-size: 16px;
+    margin: 0;
+}

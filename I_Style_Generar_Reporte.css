@@ -1,0 +1,135 @@
+/* Fondo degradado */
+body {
+    background: linear-gradient(135deg, #E3F2FD, #F4F6F9); /* Fondo degradado */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Títulos principales */
+h2, h3 {
+    text-align: center;
+    color: #3972b3; /* Azul inspirado en el logo */
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #FFFFFF; /* Fondo blanco para resaltar */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: linear-gradient(135deg, #d0e7f7, #bbdefb); /* Fondo suave con degradado */
+}
+
+
+/* Etiquetas y campos del formulario */
+form label {
+    font-weight: bold;
+    color: #0a2740;
+    margin-bottom: 5px;
+}
+
+form select,
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 16px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    background-color: #F9FAFB;
+}
+
+/* Botón de enviar */
+form button {
+    background-color: #3972b3;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0D47A1;
+}
+
+/* Contenedor de la tabla */
+table {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Cabeceras de la tabla */
+table th {
+    background-color: #3972b3;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 12px 8px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 2px solid #0D47A1;
+}
+
+/* Celdas de la tabla */
+table td {
+    padding: 10px 8px;
+    font-size: 14px;
+    color: #4A4A4A;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+/* Alternancia de colores en filas */
+table tr:nth-child(odd) td {
+    background-color: #F9FAFB;
+}
+
+/* Efecto al pasar el ratón por las filas */
+table tr:hover td {
+    background-color: #E3F2FD;
+}
+
+/* Mensaje de reporte vacío */
+p {
+    text-align: center;
+    color: #4A4A4A;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Botón para regresar al panel */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #3972b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0D47A1;
+}

@@ -1,0 +1,86 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3972b3;
+    color: white;
+}
+
+.header img {
+    height: 60px;
+}
+
+.header h1 {
+    margin: 10px 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.header p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Contenido */
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    text-align: center;
+    color: #3972b3;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Tabla */
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #3972b3;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+table td {
+    font-size: 12px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f4f6f9;
+}
+
+table tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* Pie de página */
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}

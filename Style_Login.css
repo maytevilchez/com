@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0a2740, #007bbd); /* Degradado de azul oscuro a azul celeste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con más opacidad */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Transición para un efecto sutil */
+}
+
+form:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bbd;
+    box-shadow: 0 0 8px rgba(0, 123, 189, 0.5); /* Resplandor azul celeste en foco */
+}
+
+button {
+    background: linear-gradient(135deg, #007bbd, #005a8d); /* Degradado de azul celeste a azul oscuro */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 189, 0.4); /* Sombra sutil */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #005a8d, #004466); /* Degradado más oscuro en hover */
+    box-shadow: 0 6px 20px rgba(0, 90, 141, 0.5); /* Más sombra en hover */
+}
+
+h1 {
+    color: #007bbd; /* Azul celeste */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Posicionamiento fijo */
+    z-index: 1; /* Se sitúa sobre otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Habilitar scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo con opacidad */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Margen superior e inferior */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    text-align: center;
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra para el modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

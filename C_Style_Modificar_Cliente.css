@@ -1,0 +1,199 @@
+/* Fondo degradado */
+body {
+    background: linear-gradient(135deg, #E3F2FD, #F4F6F9); /* Fondo degradado */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Títulos principales */
+h2, h3 {
+    text-align: center;
+    color: #3972b3; /* Azul inspirado en el logo */
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Estilo para el contenedor del formulario */
+form {
+    background-color: #FFFFFF; /* Fondo blanco para resaltar */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 90%;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #d0e7f7, #bbdefb); /* Fondo suave con degradado */
+}
+
+/* Estilo para cada campo del formulario */
+form div {
+    margin-bottom: 20px;
+    width: 48%; /* Mantiene la distribución en dos columnas */
+    padding: 10px;
+    box-sizing: border-box; /* Asegura que el padding no rompa el ancho */
+}
+
+/* Estilo para las etiquetas de los campos */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #0a2740; /* Azul oscuro */
+    font-size: 16px;
+}
+
+/* Estilo para los campos de entrada */
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form input[type="email"] { /* Agregamos input[type="email"] */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #B0BEC5;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #4A4A4A;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto al enfocar el campo de entrada */
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="date"]:focus,
+form input[type="email"]:focus { /* Agregamos input[type="email"] */
+    outline: none;
+    border-color: #007bbd; /* Azul celeste al enfocar */
+    box-shadow: 0 0 10px rgba(0, 123, 189, 0.3); /* Efecto de sombra al enfocar */
+}
+
+
+/* Estilo para los botones */
+button[type="submit"] {
+    background-color: #007bbd; /* Azul celeste */
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+button[type="submit"]:hover {
+    background-color: #005a8d; /* Azul más oscuro en hover */
+    transform: scale(1.05); /* Le da un pequeño efecto de aumento */
+}
+
+/* Estilo para los mensajes de éxito o error */
+#mensaje {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+/* Estilo para mensajes de éxito */
+#mensaje.success {
+    background-color: #DFF2BF;
+    color: #4F8A10;
+}
+
+/* Estilo para mensajes de error */
+#mensaje.error {
+    background-color: #FFBABA;
+    color: #D8000C;
+}
+
+/* Botón para regresar al panel */
+button[type="button"] {
+    background-color: #007bbd; /* Azul celeste */
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre el botón de regreso */
+button[type="button"]:hover {
+    background-color: #005a8d;
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+/* Estilo del contenedor para los campos */
+.hoja {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+.sidebar h1 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 20px;
+}
+
+/* Botón para regresar al panel */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #3972b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0D47A1;
+}
+
+/* Estilo específico para el select (menú desplegable) */
+select {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Efecto al enfocar el select */
+select:focus {
+    border-color: #005b99; /* Cambia el borde a azul al hacer focus */
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 189, 0.3); /* Efecto de sombra al enfocar */
+}
+
+/* Añadir padding al primer elemento del select */
+select option {
+    padding: 10px;
+}
+
+/* Estilo para el "Seleccionar proveedor" */
+option:first-child {
+    color: #888; /* Gris claro */
+}

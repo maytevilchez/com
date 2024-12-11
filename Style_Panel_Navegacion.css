@@ -1,0 +1,154 @@
+/* El asterisco (*) selecciona todos los elementos y elimina los márgenes y el padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del body */
+body {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eeeef2, #aabfdb); /* Fondo degradado */
+}
+
+/* Estilo del contenido con degradado */
+.contenido {
+    display: flex;
+    width: 100%;
+    margin-left: 250px;
+    padding: 40px;
+}
+
+/* Estilo del panel lateral (sidebar) */
+.sidebar {
+    width: 250px;
+    background-color: #0a2740; /* Azul oscuro del logo de Pecosol */
+    color: white;
+    padding-top: 20px;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    transition: width 0.3s ease; /* Transición suave al cambiar tamaño */
+}
+
+.sidebar h1 {
+    color: #ffffff; /* Blanco puro para el texto */
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Lista de elementos de navegación dentro del sidebar */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease, padding-left 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #007bbd; /* Azul celeste del logo de Pecosol */
+    padding-left: 25px; /* Efecto de desplazamiento al pasar el ratón */
+    border-left: 4px solid #c2c8e8; /* Amarillo de acento */
+}
+
+.logout-btn {
+    background-color: #007bbd; /* Fondo amarillo para el botón de cerrar sesión */
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: left;
+    color: #0a2740; /* Azul oscuro para el texto */
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: white;
+    color: #0a2740;
+    box-shadow: 0 0 10px rgba(0, 123, 189, 0.5); /* Sombra sutil */
+}
+
+/* Estilo de los títulos dentro del contenido principal */
+h2 {
+    margin-bottom: 20px;
+    color: #005b99; /* Color azul más oscuro para los títulos */
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Estilo para la descripción del inventario */
+.inventario-descripcion {
+    color: #003f5c; /* Color más oscuro para mejorar la legibilidad */
+    font-size: 20px; /* Tamaño de la fuente */
+    text-align: justify; /* Justificado para mejor disposición */
+    margin-top: 10px;
+    line-height: 1.6; /* Espaciado entre líneas */
+    padding: 20px; /* Espacio adicional alrededor del texto */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    max-width: 100%; /* Ancho máximo para adaptarse a la página */
+    margin-left: auto; /* Centrar horizontalmente */
+    margin-right: auto; /* Centrar horizontalmente */
+    overflow-wrap: break-word; /* Asegurar que el texto se ajuste al contenedor */
+}
+
+
+/* Adaptación para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Ajustar el ancho del sidebar en pantallas más pequeñas */
+    }
+
+    .contenido {
+        margin-left: 200px; /* Ajustar el margen del contenido en pantallas pequeñas */
+    }
+}
+
+.default-content {
+    text-align: center;
+    margin-top: -30px;
+    padding: 10px;
+}
+
+.default-image {
+    max-width: 80%; /* La imagen ocupará un máximo del 80% del ancho del contenedor */
+    margin-left: 100px;
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción */
+    display: block; /* Necesario para centrar el bloque */
+    border-radius: 10px; /* Opcional: bordes redondeados para un mejor diseño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: sombra para darle profundidad */
+    margin-bottom: 40px; /* Espacio debajo de la imagen */
+}
+
+button:hover {
+    background-color: #005a8d; /* Color más oscuro en hover */
+    box-shadow: 0 6px 15px rgba(0, 90, 141, 0.4); /* Sombra más intensa en hover */
+}
+
+/* Adaptación para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .contenido {
+        padding: 20px; /* Reducimos el padding en pantallas pequeñas */
+        margin-left: 200px; /* Ajustamos el margen */
+        border-radius: 10px; /* Bordes ligeramente menos redondeados */
+    }
+}
